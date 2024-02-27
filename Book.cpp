@@ -111,6 +111,7 @@
             author_ = std::move(rhs.author_);
             ISBN_ = std::move(rhs.ISBN_);
             price_ = std::move(rhs.price_);
+            keywords_ = std::move(rhs.keywords_);
             blurb_ = std::move(rhs.blurb_);
         }
         return *this;
