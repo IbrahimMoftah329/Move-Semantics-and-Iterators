@@ -161,7 +161,7 @@
     // Setter for the icon of the book
     void Book::setIcon(int* icon)
     {
-        delete icon_; // Release the existing icon memory if any
+        delete[] icon_; // Release the existing icon memory if any
         
         // Allocate new memory and copy the elements
         icon_ = new int[80];
