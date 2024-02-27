@@ -111,21 +111,21 @@ int main(){
 
   // // write your test cases here
   // // Example 1: Print details of all books in the catalog
-    for (const auto& book : catalog) {
-        book.print();
-        std::cout << "---------------------------" << std::endl;
-    }
+    // for (const auto& book : catalog) {
+    //     book.print();
+    //     std::cout << "---------------------------" << std::endl;
+    // }
 
     // Example 2: Move books with a specific keyword from catalog to cart
     std::string keywordToMove = "Adult Fiction";
     moveAll(keywordToMove, catalog, cart);
 
     // Example 3: Print details of books in the cart after moving
-    // std::cout << "Books in the cart after moving:" << std::endl;
-    // for (const auto& book : cart) {
-    //     book.print();
-    //     std::cout << "---------------------------" << std::endl;
-    // }
+    std::cout << "Books in the cart after moving:" << std::endl;
+    for (const auto& book : cart) {
+        book.print();
+        std::cout << "---------------------------" << std::endl;
+    }
 
 
   return 0;
