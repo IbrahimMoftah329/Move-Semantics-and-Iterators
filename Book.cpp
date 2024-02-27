@@ -10,7 +10,7 @@
     Book::~Book()
     {
         // Deallocate memory for icon_
-        delete icon_;
+        delete[] icon_;
     }
 
     // Copy constructor for the Book class
