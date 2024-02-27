@@ -12,7 +12,7 @@ void moveAll (const std::string keyword, std::vector<Book> &source, std::vector<
   // DO NOT ALTER ABOVE HERE
 
   // Iterate over the source vector using an iterator
-  for (auto it = source.begin(); it != source.end(); ++it)
+  for (auto it = source.begin(); it != source.end();)
   {
     // Check if any keyword of the current book matches the specified keyword
     const std::vector<std::string>& keywords = it->getKeywords();
