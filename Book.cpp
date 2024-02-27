@@ -226,8 +226,13 @@
         std::cout << "Price: $" << std::fixed << std::setprecision(2) << price_ << std::endl;
 
         std::cout << "Keywords: ";
-        for (const auto& keyword : keywords_) {
-            std::cout << keyword << ", ";
+        for (size_t i = 0; i < keywords_.size(); ++i) {
+            std::cout << keywords_[i];
+            
+            // Print comma if it's not the last keyword
+            if (i < keywords_.size() - 1) {
+                std::cout << ", ";
+            }
         }
         std::cout << std::endl;
 
