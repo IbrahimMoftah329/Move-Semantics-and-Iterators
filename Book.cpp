@@ -43,10 +43,7 @@
         // Check for self-assignment
         if (this != &rhs) {
             // Release resources held by the current object
-
             delete[] icon_;
-
-            // Copy values of member variables from the source object (rhs).
 
             // Deep copy for icon_
             if (rhs.icon_) {
@@ -70,7 +67,6 @@
         }
         return *this;
     }
-
 
     // Move constructor for the Book class
     Book::Book(Book&& rhs) 
@@ -98,10 +94,7 @@
         // Check for self-assignment
         if (this != &rhs) {
             // Release resources held by the current object
-
             delete[] icon_;
-
-            // Move values of member variables from the source object (rhs).
 
             // Move ownership of icon_ from rhs to the current object
             icon_ = rhs.icon_;
@@ -236,7 +229,6 @@
         for (size_t i = 0; i < keywords_.size(); ++i) {
             std::cout << keywords_[i];
             
-            // Print comma if it's not the last keyword
             if (i < keywords_.size() - 1) {
                 std::cout << ", ";
             }
