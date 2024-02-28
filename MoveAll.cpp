@@ -26,6 +26,9 @@ void moveAll (const std::string keyword, std::vector<Book> &source, std::vector<
 
       // Increment the count of books moved
       ++books_moved;
+    } else {
+      // Move to the next book in the source vector
+      ++it;
     }
   }
 
