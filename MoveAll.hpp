@@ -1,3 +1,8 @@
+/*
+CSCI335 Spring 2024
+Project 1
+Ibrahim Moftah
+*/
 #include <string>
 #include <vector>
 #include <list>
