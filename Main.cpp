@@ -1,8 +1,3 @@
-/*
-CSCI335 Spring 2024
-Project 1
-Ibrahim Moftah
-*/
 #include <iostream>
 #include <fstream>
 #include <string>
