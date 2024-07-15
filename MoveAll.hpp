@@ -1,3 +1,7 @@
+/*
+Author: Ibrahim Moftah
+*/
+
 #include <string>
 #include <vector>
 #include <list>
