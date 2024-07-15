@@ -1,8 +1,3 @@
-/*
-CSCI335 Spring 2024
-Project 1
-Ibrahim Moftah
-*/
 #ifndef BOOK_HPP
 #define BOOK_HPP
 
