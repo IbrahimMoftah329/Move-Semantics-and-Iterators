@@ -1,3 +1,7 @@
+/*
+Author: Ibrahim Moftah
+*/
+
 #ifndef BOOK_HPP
 #define BOOK_HPP
 
