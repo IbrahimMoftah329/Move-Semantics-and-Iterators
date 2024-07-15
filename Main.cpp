@@ -1,3 +1,7 @@
+/*
+Author: Ibrahim Moftah
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
