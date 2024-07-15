@@ -1,7 +1,7 @@
-Project 1: Book Management and Moving Function
+Project: Book Management and Moving Function
 
 Overview
-Project 1 involves implementing a Book class and a moveAll function, both of which will be evaluated. The project consists of five files: Main.cpp, Book.cpp, Book.hpp, MoveAll.cpp, and MoveAll.hpp. You will be working specifically on Book.cpp and MoveAll.cpp. The other files have been provided to you, and Main.cpp includes space for writing test cases.
+Project involves implementing a Book class and a moveAll function, both of which will be evaluated. The project consists of five files: Main.cpp, Book.cpp, Book.hpp, MoveAll.cpp, and MoveAll.hpp. You will be working specifically on Book.cpp and MoveAll.cpp. The other files have been provided to you, and Main.cpp includes space for writing test cases.
 
 Objective
 The goal is to read book data from a file, store it in a vector called catalog, and move selected books to another vector called cart based on a specified keyword. This operation will be performed using the moveAll function.
