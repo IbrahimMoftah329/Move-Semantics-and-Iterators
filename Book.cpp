@@ -1,3 +1,7 @@
+/*
+Author: Ibrahim Moftah
+*/
+
 #include "Book.hpp"
 
     // Default constructor for the Book class
