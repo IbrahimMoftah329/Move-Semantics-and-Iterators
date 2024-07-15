@@ -1,25 +1,30 @@
-Project 1 consists of 5 files: Main.cpp, Book.cpp, Book.hpp, MoveAll.cpp, MoveAll.hpp. All those files, as well as a sample input file, can be downloaded by clicking on "Project 1 template and input files" right above this.
-You will implement the Book class in Book.cpp and write the moveAll function in MoveAll.cpp. Those are the only files you'll be graded on.
-The rest of the files have already been written for you.
-Main.cpp has space at the end for you to write test cases. Books read in from the file will be stored in vector<Book> catalog at that point, while vector<Book> cart will be empty, so that you can move Books into it.
-The project will be due by end of day Friday, March 1, and will be submitted on Gradescope. The autograder will be up over the weekend.
-Clarifications / FAQs:
-In moveAll, "moving" a Book implies that you delete it from the source. So yes, you must delete moved Books from the source.
-In moveAll, you must count the number of Books moved using the provided variable int books_moved, so that it may be printed at the end of the function.
-Book's print() method should print in the exact same format as the original file. At the end, you should return to the next line, but not skip a line. So one endl after printing the last line, not two.
-std::swap should only be used if you actually need to swap objects. Using it to move or copy is needlessly inefficient.
-The entirety of project 1 (once you've completed Book.cpp and MoveAll.cpp) reads Book objects in from a file, stores them in a vector of Books called "catalog", and allows you to move Books from "catalog" to another vector of Books called "cart". It does this using the moveAll function, which moves all Books containing a specified keyword.
-Books have 7 data members:
-        std::string title_;
-        std::string author_;
-        long long int ISBN_;
-        int* icon_;
-        float price_;
-        std::vector<std::string> keywords_;
-        std::string blurb_;
-Title, author, and ISBN should be self-explanatory.
-Icon is meant to represent a small bitmap, so it consists of 80 integers between 0 and 255.
-Price is stored as a float, but when printed out must have exactly 2 digits after the decimal point.
-Keywords is a list of categories or tags (usually 3), such as "Spanish Literature", "Food", "Amish Fiction" (yes that's one of the categories my TA found), etc.
-Blurb is a short description of the book.
-Some of the data was scraped from various places while some parts were randomly generated, so don't expect the data to make sense all the time. Also, some blurbs had special characters that cause problems, and may look odd. Despite that, everything reads in and works fine, and our TA Daniel made the descriptions much more convincing than I expected - it's not that easy to generate random book descriptions that look legit even at a glance.
+Project 1: Book Management and Moving Function
+
+Overview
+Project 1 involves implementing a Book class and a moveAll function, both of which will be evaluated. The project consists of five files: Main.cpp, Book.cpp, Book.hpp, MoveAll.cpp, and MoveAll.hpp. You will be working specifically on Book.cpp and MoveAll.cpp. The other files have been provided to you, and Main.cpp includes space for writing test cases.
+
+Objective
+The goal is to read book data from a file, store it in a vector called catalog, and move selected books to another vector called cart based on a specified keyword. This operation will be performed using the moveAll function.
+
+Clarifications and Requirements
+
+Book Class Implementation:
+Data Members: std::string title_, std::string author_, long long int ISBN_, int* icon_, float price_, std::vector<std::string> keywords_, std::string blurb_.
+Printing: The print() method of the Book class should output data in the exact format as the original file, followed by a single newline (not double).
+
+moveAll Function:
+Functionality: The function should move all books containing a specified keyword from the catalog vector to the cart vector.
+Books Moved Counter: Use the provided int books_moved variable to count the number of books moved.
+Deletion: "Moving" a book implies deleting it from the source vector (catalog).
+Efficiency: Avoid using std::swap unnecessarily, as it is inefficient for moving or copying objects.
+
+Main.cpp
+Test Cases: Add your test cases at the end of Main.cpp.
+Data Storage: Books read from the file will be stored in the catalog vector, while the cart vector will initially be empty.
+
+Book Data
+Attributes: Title, author, ISBN, icon, price, keywords, and blurb.
+Icon: A small bitmap represented by 80 integers between 0 and 255.
+Price: Stored as a float and printed with exactly two decimal places.
+Keywords: A list of categories or tags, typically three.
+Blurb: A short description of the book.
